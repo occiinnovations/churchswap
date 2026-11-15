@@ -8,7 +8,7 @@ This enables seamless, hands-free camera management for livestreaming without re
 
 ## Update
 
-Churchswap will be getting combined into autOBS to form a new project called **Nodary**. This new project is highly experimental, but for the most part, Churchswap will not be significantly updated. This repo will retain functioning code.
+Churchswap will be getting combined into [autOBS](https://github.com/occiinnovations/autOBS) to form a new project called **Nodary**. This new project is highly experimental, but for the most part, Churchswap will not be significantly updated. This repo will retain functioning code.
 
 ## Installation
 
