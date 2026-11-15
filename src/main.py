@@ -1,3 +1,5 @@
+import time
+
 import cv2
 import numpy as np
 from ultralytics import YOLO
@@ -27,10 +29,16 @@ while True:
 
     if selected == "q":
         break
-    cv2.imshow("my frame", the_dict[selected])
 
     results = model(the_dict[selected])
+    humans = results[0].boxes.cls.tolist()
+
+    if 0 not in humans:
+        selected = "1"
+
     anno_frame = results[0].plot()
+
+    cv2.imshow("my frame", anno_frame)
 
     if selected == "q":
         break
