@@ -7,9 +7,7 @@ my_stream1 = cv2.VideoCapture(1, cv2.CAP_DSHOW)
 
 model = YOLO("models/yolov8n.pt")
 
-cv2.namedWindow("ig bro")
-
-selected = "0"
+selected = "0"  # default
 
 while True:
     ret1, frame1 = my_stream1.read()
@@ -30,6 +28,10 @@ while True:
     if selected == "q":
         break
     cv2.imshow("my frame", the_dict[selected])
+
+    results = model(the_dict[selected])
+    anno_frame = results[0].plot()
+
     if selected == "q":
         break
 
