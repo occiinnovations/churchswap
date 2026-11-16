@@ -15,7 +15,7 @@ Churchswap will be getting combined into [autOBS](https://github.com/occiinnovat
 ```bash
 python -m pip install -r requirements.txt
 
-python 'src/main.py'
+python src/main.py
 ```
 
 ## Intended Use
